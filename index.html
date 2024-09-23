@@ -4,16 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav>
-
+    <nav class="">
+        <header class="flex bg-[#F9F7F3] py-4 justify-around items-center">
+            <button class="bg-[#B4F461] px-8 py-3 text-xl font-semibold text-[#111111] rounded-lg">Blog</button>
+            <div class="flex justify-center items-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <p class=" text-xl font-semibold text-[#111111] rounded-lg">Donate Bangladesh</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="assets/coin.png" alt="">
+                <p><span id="your-money">5500</span> BDT</p>
+            </div>
+        </header>
+        <div class="flex items-center justify-center gap-2 mt-4">
+         <button id="donation-button" class="bg-white border-2 border-solid px-8 py-3 text-xl font-semibold text-[#111111] rounded-lg">Donation</button>
+         <button class="bg-white border-2 border-solid px-8 py-3 text-xl font-semibold text-[#111111] rounded-lg">History</button>        
+        </div>
     </nav>
-    <main>
+    <main class="mt-8 weight ">
+        <!-- first card  start-->
 
-    </main>
-    <footer>
+     <div class="gap-3 flex border-2 mb-6 border-solid rounded-xl p-4">
+        <img class="weight1" src="assets/noakhali.png" alt="">
+            
+        <div class="weight1 ">
+            <div class="flex gap-1 w-28 px-3 py-2 rounded-lg bg-slate-200 items-center">
+                <img src="assets/coin.png" alt="">
+                <p><span id="money-of-noyakhali">100</span>BDT</p>
+            </div>
+            <h1 class="font-bold text-[#111111] text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+            <p class="font-normal text-[#111111B3] text-base"> The recent floods in Noakhali have caused significant damage 
+                to homes infrastructure. Your donation will help provide 
+                essential supplies and to those affected by this disaster.
+                 Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a
+                   positive impact on the lives of those in need. </p>
         
-    </footer>
+               <div>
+                <input id="input-noyakhali-money" class="border-2 weight2 py-3 pl-4 border-solid rounded-lg " type="number" placeholder="Write Donation Amount">  
+               </div>
+             
+           <div>
+            <button id="noyakhali-donate" class="bg-[#B4F461] weight2 mt-4 px-auto py-3 text-xl font-semibold text-[#111111] rounded-lg">Donate Now</button>   
+           </div>
+        </div>
+
+
+     </div>
+
+      <!-- first card end  -->
+
+      <!-- second card start  -->
+     <div class="gap-3 flex border-2 mb-6 border-solid rounded-xl p-4">
+        <img class="weight1" src="assets/feni.png" alt="">
+            
+        <div class="weight1 ">
+            <div class="flex gap-1 w-28 px-3 py-2 rounded-lg bg-slate-200 items-center">
+                <img src="assets/coin.png" alt="">
+                <p><span id="money-of-feni">100</span>BDT</p>
+            </div>
+            <h1 class="font-bold text-[#111111] text-xl">Donate for Flood Relief in Feni,Bangladesh</h1>
+            <p class="font-normal text-[#111111B3] text-base"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need. </p>
+        
+               <div>
+                <input id="input-feni-money" class="border-2 weight2 py-3 pl-4 border-solid rounded-lg" type="number" placeholder="Write Donation Amount">  
+               </div>
+             
+           <div>
+            <button id="feni-donate" class="bg-[#B4F461] weight2 mt-4 px-auto py-3 text-xl font-semibold text-[#111111] rounded-lg">Donate Now</button>   
+           </div>
+        </div>
+
+
+     </div>
+     <!--  second card end   -->
+
+      <!-- thard card start  -->
+     <div class="gap-3 flex border-2 border-solid rounded-xl p-4">
+        <img class="weight1" src="assets/quota-protest.png" alt="">
+            
+        <div class="weight1 ">
+            <div class="flex gap-1 w-28 px-3 py-2 rounded-lg bg-slate-200 items-center">
+                <img src="assets/coin.png" alt="">
+                <p><span id="money-of-quota">100</span>BDT</p>
+            </div>
+            <h1 class="font-bold text-[#111111] text-xl">Aid for Injured in the Quota Movement</h1>
+            <p class="font-normal text-[#111111B3] text-base"> 
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need. </p>
+        
+               <div>
+                <input id="input-quota-money" class="border-2 weight2 py-3 pl-4 border-solid rounded-lg" type="text" placeholder="Write Donation Amount">  
+               </div>
+             
+           <div>
+            <button id="quota-donate" class="bg-[#B4F461] weight2 mt-4 px-auto py-3 text-xl font-semibold text-[#111111] rounded-lg">Donate Now</button>   
+           </div>
+        </div>
+
+
+     </div>
+     <!-- thard card end  -->
+    </main>
+    <script src="js/shared.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
