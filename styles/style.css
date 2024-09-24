@@ -9,3 +9,31 @@
 .weight2{
     width: 95%;
 }
+.popup{
+    visibility: hidden;
+   
+}
+
+.color{
+    background-color: chartreuse;
+}
+.position-rela{
+    position: relative;
+}
+.popup-open{
+    visibility: visible;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.svg-position{
+    position: absolute;
+    left: 85%;
+    top: 8%;
+}
+.marginl{
+    margin-left: 10%;
+}
+.faq-display{
+    display: none;
+}

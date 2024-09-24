@@ -1,7 +1,14 @@
-// document.getElementById('donation-button').addEventListener('click',function(){
+// // click history button 
+// document.getElementById('history-button').addEventListener('click',function(){
+//     const donateButton=document.getElementById('donation-button').classList.remove('color');
+//    const historybutton= document.getElementById('history-button').classList.add('color');
     
-//     console.log('akho')
 // })
+// click donation button 
+document.getElementById('donation-button').addEventListener('click',function(){
+    const donateButtonClick=document.getElementById('donation-button').classList.add('color');
+    const historybuttonRemove= document.getElementById('history-button').classList.remove('color');
+})
 
 document.getElementById('noyakhali-donate').addEventListener('click',function(event){
     event.preventDefault();
@@ -14,10 +21,17 @@ document.getElementById('noyakhali-donate').addEventListener('click',function(ev
     const yourMoney=balancsOfAcount('your-money');
     const currentYourMony=yourMoney-noyakhaliAddMoney;
     document.getElementById('your-money').innerText=currentYourMony;
+
+    const popup= document.getElementById('popup');
+    popup.classList.add('popup-open');
    }
    else{
     alert('Invalid Donation Amount')
    } 
+   document.getElementById('close-popup').addEventListener('click',function(){
+    const popup= document.getElementById('popup');
+    popup.classList.remove('popup-open');
+    })
 })
 
 // for feni 
@@ -33,11 +47,20 @@ document.getElementById('feni-donate').addEventListener('click',function(event){
     const yourMoney=balancsOfAcount('your-money');
     const currentYourMony=yourMoney-feniAddMoney;
     document.getElementById('your-money').innerText=currentYourMony;
+
+    const popup= document.getElementById('popup');
+    popup.classList.add('popup-open');
    }
    else{
     alert('Invalid Donation Amount')
    } 
+   document.getElementById('close-popup').addEventListener('click',function(){
+    const popup= document.getElementById('popup');
+    popup.classList.remove('popup-open');
+    })
 })
+
+// for quota 
 document.getElementById('quota-donate').addEventListener('click',function(event){
     event.preventDefault();
    const quotaCurrentBalan= balancsOfAcount('money-of-quota');
@@ -49,8 +72,16 @@ document.getElementById('quota-donate').addEventListener('click',function(event)
     const yourMoney=balancsOfAcount('your-money');
     const currentYourMony=yourMoney-quotaAddMoney;
     document.getElementById('your-money').innerText=currentYourMony;
+
+    const popup= document.getElementById('popup');
+    popup.classList.add('popup-open');
+   
    }
    else{
     alert('Invalid Donation Amount')
    } 
+   document.getElementById('close-popup').addEventListener('click',function(){
+    const popup= document.getElementById('popup');
+    popup.classList.remove('popup-open');
+    })
 })

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -22,17 +23,19 @@
             </div>
         </header>
         <div class="flex items-center justify-center gap-2 mt-4">
-         <button id="donation-button" class="bg-white border-2 border-solid px-8 py-3 text-xl font-semibold text-[#111111] rounded-lg">Donation</button>
-         <button class="bg-white border-2 border-solid px-8 py-3 text-xl font-semibold text-[#111111] rounded-lg">History</button>        
+         <div class="">
+            <button id="donation-button" class="color border-2 border-solid px-8 py-3 text-xl font-semibold text-[#111111] rounded-lg">Donation</button>
+         </div>
+         <button id="history-button" class=" border-2 border-solid px-8 py-3 text-xl font-semibold text-[#111111] rounded-lg">History</button>        
         </div>
     </nav>
-    <main class="mt-8 weight ">
+    <main class=" mt-6 lg:mt-8 weight ">
         <!-- first card  start-->
 
-     <div class="gap-3 flex border-2 mb-6 border-solid rounded-xl p-4">
-        <img class="weight1" src="assets/noakhali.png" alt="">
+     <div class="gap-3 flex flex-col lg:flex lg:flex-row border-2 mb-6 border-solid rounded-xl p-4">
+        <img class="lg:weight1" src="assets/noakhali.png" alt="">
             
-        <div class="weight1 ">
+        <div class="lg:weight1 ">
             <div class="flex gap-1 w-28 px-3 py-2 rounded-lg bg-slate-200 items-center">
                 <img src="assets/coin.png" alt="">
                 <p><span id="money-of-noyakhali">100</span>BDT</p>
@@ -60,10 +63,10 @@
       <!-- first card end  -->
 
       <!-- second card start  -->
-     <div class="gap-3 flex border-2 mb-6 border-solid rounded-xl p-4">
-        <img class="weight1" src="assets/feni.png" alt="">
+     <div class="gap-3 flex flex-col lg:flex lg:flex-row border-2 mb-6 border-solid rounded-xl p-4">
+        <img class="lg:weight1" src="assets/feni.png" alt="">
             
-        <div class="weight1 ">
+        <div class="lg:weight1 ">
             <div class="flex gap-1 w-28 px-3 py-2 rounded-lg bg-slate-200 items-center">
                 <img src="assets/coin.png" alt="">
                 <p><span id="money-of-feni">100</span>BDT</p>
@@ -85,10 +88,10 @@
      <!--  second card end   -->
 
       <!-- thard card start  -->
-     <div class="gap-3 flex border-2 border-solid rounded-xl p-4">
-        <img class="weight1" src="assets/quota-protest.png" alt="">
+     <div class="gap-3 flex flex-col lg:flex lg:flex-row border-2 border-solid rounded-xl p-4">
+        <img class="lg:weight1" src="assets/quota-protest.png" alt="">
             
-        <div class="weight1 ">
+        <div class="lg:weight1 ">
             <div class="flex gap-1 w-28 px-3 py-2 rounded-lg bg-slate-200 items-center">
                 <img src="assets/coin.png" alt="">
                 <p><span id="money-of-quota">100</span>BDT</p>
@@ -109,7 +112,22 @@
 
      </div>
      <!-- thard card end  -->
+
+     <!-- popup button  -->
+    <div id="popup" class="flex popup flex-col items-center w-72 lg:w-96 h-44 lg:h-52 rounded-xl
+    bg-white">
+        <h1 class="text-xl lg:text-2xl font-bold mb-1">Congrates</h1>
+        <img src="assets/coin.png" alt="">
+        <p class="lg:mt-1">You Have Donated For Humankind</p>
+        <h2 class="text-base lg:text-lg font-bold lg:my-1">Successfully</h2>
+        <button id="close-popup" class="border-2 mt-2 lg:mt-5 border-solid px-4 py-2 text-xl font-semibold text-[#111111] rounded-lg">close confirmation</button>
+
+    </div>
+
+   <!-- close popup button  -->
+
     </main>
+    <script src="js/hisroty.js"></script>
     <script src="js/shared.js"></script>
     <script src="js/home.js"></script>
 </body>
